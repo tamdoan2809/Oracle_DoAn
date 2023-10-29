@@ -13,7 +13,7 @@ namespace DoAn_1
 {
     public partial class Login : Form
     {
-        private string hashedPassword;
+        //private string hashedPassword;
         public Login()
         {
             InitializeComponent();
@@ -44,15 +44,18 @@ namespace DoAn_1
             try
             {
                 connection.Open();
-                OracleCommand cmd = new OracleCommand("BEGIN :result := HashPassword(:password); END;", connection);
-                cmd.CommandType = CommandType.Text;
-                cmd.Parameters.Add("result", OracleDbType.Varchar2, 32).Direction = ParameterDirection.Output;
-                cmd.Parameters.Add("password", OracleDbType.Varchar2).Value = password;
+                //OracleCommand cmd = new OracleCommand("BEGIN :result := HashPassword(:password); END;", connection);
+                //cmd.CommandType = CommandType.Text;
+                //cmd.Parameters.Add("result", OracleDbType.Varchar2, 32).Direction = ParameterDirection.Output;
+                //cmd.Parameters.Add("password", OracleDbType.Varchar2).Value = password;
 
-                cmd.ExecuteNonQuery();
-                hashedPassword = cmd.Parameters["result"].Value.ToString();
+                //cmd.ExecuteNonQuery();
+                //hashedPassword = cmd.Parameters["result"].Value.ToString();
+                TrangChu homeForm = new TrangChu(accessLevel);
+                homeForm.Show();
+                this.Hide();
                 MessageBox.Show("Kết nối thành công!");
-                connection.Close();
+                
             }
             catch (Exception ex)
             {

@@ -30,14 +30,14 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mn_ql = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngKýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cậpNhậtTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thôngTinNgườiDùngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dxuat_mns = new System.Windows.Forms.ToolStripMenuItem();
+            this.dky_mnstrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.upduser_mns = new System.Windows.Forms.ToolStripMenuItem();
+            this.infouser_mns = new System.Windows.Forms.ToolStripMenuItem();
+            this.roleuser_mns = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýSảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýKháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
-            this.phânQuyềnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,40 +57,47 @@
             // mn_ql
             // 
             this.mn_ql.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.đăngXuấtToolStripMenuItem,
-            this.đăngKýToolStripMenuItem,
-            this.cậpNhậtTàiKhoảnToolStripMenuItem,
-            this.thôngTinNgườiDùngToolStripMenuItem,
-            this.phânQuyềnToolStripMenuItem});
+            this.dxuat_mns,
+            this.dky_mnstrip,
+            this.upduser_mns,
+            this.infouser_mns,
+            this.roleuser_mns});
             this.mn_ql.Name = "mn_ql";
             this.mn_ql.Size = new System.Drawing.Size(161, 24);
             this.mn_ql.Text = "Quản Lý Người Dùng";
             // 
-            // đăngXuấtToolStripMenuItem
+            // dxuat_mns
             // 
-            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
-            this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
+            this.dxuat_mns.Name = "dxuat_mns";
+            this.dxuat_mns.Size = new System.Drawing.Size(244, 26);
+            this.dxuat_mns.Text = "Đăng Xuất";
+            this.dxuat_mns.Click += new System.EventHandler(this.dxuat_mns_Click);
             // 
-            // đăngKýToolStripMenuItem
+            // dky_mnstrip
             // 
-            this.đăngKýToolStripMenuItem.Name = "đăngKýToolStripMenuItem";
-            this.đăngKýToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
-            this.đăngKýToolStripMenuItem.Text = "Đăng Ký";
-            this.đăngKýToolStripMenuItem.Click += new System.EventHandler(this.đăngKýToolStripMenuItem_Click);
+            this.dky_mnstrip.Name = "dky_mnstrip";
+            this.dky_mnstrip.Size = new System.Drawing.Size(244, 26);
+            this.dky_mnstrip.Text = "Đăng Ký";
+            this.dky_mnstrip.Click += new System.EventHandler(this.đăngKýToolStripMenuItem_Click);
             // 
-            // cậpNhậtTàiKhoảnToolStripMenuItem
+            // upduser_mns
             // 
-            this.cậpNhậtTàiKhoảnToolStripMenuItem.Name = "cậpNhậtTàiKhoảnToolStripMenuItem";
-            this.cậpNhậtTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
-            this.cậpNhậtTàiKhoảnToolStripMenuItem.Text = "Cập Nhật Tài Khoản";
+            this.upduser_mns.Name = "upduser_mns";
+            this.upduser_mns.Size = new System.Drawing.Size(244, 26);
+            this.upduser_mns.Text = "Cập Nhật Tài Khoản";
             // 
-            // thôngTinNgườiDùngToolStripMenuItem
+            // infouser_mns
             // 
-            this.thôngTinNgườiDùngToolStripMenuItem.Name = "thôngTinNgườiDùngToolStripMenuItem";
-            this.thôngTinNgườiDùngToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
-            this.thôngTinNgườiDùngToolStripMenuItem.Text = "Thông Tin Người Dùng";
-            this.thôngTinNgườiDùngToolStripMenuItem.Click += new System.EventHandler(this.thôngTinNgườiDùngToolStripMenuItem_Click);
+            this.infouser_mns.Name = "infouser_mns";
+            this.infouser_mns.Size = new System.Drawing.Size(244, 26);
+            this.infouser_mns.Text = "Thông Tin Người Dùng";
+            this.infouser_mns.Click += new System.EventHandler(this.thôngTinNgườiDùngToolStripMenuItem_Click);
+            // 
+            // roleuser_mns
+            // 
+            this.roleuser_mns.Name = "roleuser_mns";
+            this.roleuser_mns.Size = new System.Drawing.Size(244, 26);
+            this.roleuser_mns.Text = "Phân Quyền";
             // 
             // quảnLýSảnPhẩmToolStripMenuItem
             // 
@@ -115,12 +122,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Quản Lý Shop Quần Áo";
             // 
-            // phânQuyềnToolStripMenuItem
-            // 
-            this.phânQuyềnToolStripMenuItem.Name = "phânQuyềnToolStripMenuItem";
-            this.phânQuyềnToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
-            this.phânQuyềnToolStripMenuItem.Text = "Phân Quyền";
-            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -142,13 +143,13 @@
 
         private MenuStrip menuStrip1;
         private ToolStripMenuItem mn_ql;
-        private ToolStripMenuItem đăngXuấtToolStripMenuItem;
-        private ToolStripMenuItem đăngKýToolStripMenuItem;
-        private ToolStripMenuItem cậpNhậtTàiKhoảnToolStripMenuItem;
-        private ToolStripMenuItem thôngTinNgườiDùngToolStripMenuItem;
+        private ToolStripMenuItem dxuat_mns;
+        private ToolStripMenuItem dky_mnstrip;
+        private ToolStripMenuItem upduser_mns;
+        private ToolStripMenuItem infouser_mns;
         private ToolStripMenuItem quảnLýSảnPhẩmToolStripMenuItem;
         private ToolStripMenuItem quảnLýKháchHàngToolStripMenuItem;
         private Label label1;
-        private ToolStripMenuItem phânQuyềnToolStripMenuItem;
+        private ToolStripMenuItem roleuser_mns;
     }
 }

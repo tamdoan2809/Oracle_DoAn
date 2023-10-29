@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\1_Oracle_2\\DoAn_1\\DoAn_1\\DoAn_1.csproj": {}
+    "E:\\1_Github\\Oracle_DoAn\\DoAn_1\\DoAn_1\\DoAn_1.csproj": {}
   },
   "projects": {
-    "E:\\1_Oracle_2\\DoAn_1\\DoAn_1\\DoAn_1.csproj": {
+    "E:\\1_Github\\Oracle_DoAn\\DoAn_1\\DoAn_1\\DoAn_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\1_Oracle_2\\DoAn_1\\DoAn_1\\DoAn_1.csproj",
+        "projectUniqueName": "E:\\1_Github\\Oracle_DoAn\\DoAn_1\\DoAn_1\\DoAn_1.csproj",
         "projectName": "DoAn_1",
-        "projectPath": "E:\\1_Oracle_2\\DoAn_1\\DoAn_1\\DoAn_1.csproj",
+        "projectPath": "E:\\1_Github\\Oracle_DoAn\\DoAn_1\\DoAn_1\\DoAn_1.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "E:\\1_Oracle_2\\DoAn_1\\DoAn_1\\obj\\",
+        "outputPath": "E:\\1_Github\\Oracle_DoAn\\DoAn_1\\DoAn_1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,10 +45,6 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "Oracle.ManagedDataAccess": {
-              "target": "Package",
-              "version": "[21.12.0, )"
-            },
             "Oracle.ManagedDataAccess.Core": {
               "target": "Package",
               "version": "[3.21.120, )"
